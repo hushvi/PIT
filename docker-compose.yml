@@ -1,0 +1,40 @@
+version: "3.9"
+services:
+
+  sql-data:
+    image: sqldata
+    environment:
+     ACCEPT_EULA: "Y"
+     SA_PASSWORD: "Pa$$w0rd16"
+     MSSQL_SA_PASSWORD: "Pa$$w0rd16"
+     MSSQL_PID: Express
+    ports:
+     - "1433:1433" 
+
+  subscription:
+    build: C:\Users\User\Desktop\Microservices\Subscriptions.Microservice\.
+    environment: 
+     DBServer: "sql-data"
+    ports:
+      - 8081:80
+
+  team:
+    build: C:\Users\User\Desktop\Microservices\Team.Microservice\.
+    environment: 
+     DBServer: "sql-data"
+    ports:
+      - 8082:80
+
+  games:
+    build: C:\Users\User\Desktop\Microservices\Games.Microservice\.
+    environment: 
+     DBServer: "sql-data"
+    ports:
+      - 8083:80
+
+  news:
+    build: C:\Users\User\Desktop\Microservices\News.Microservice\.
+    environment: 
+     DBServer: "sql-data"
+    ports:
+      - 8084:80

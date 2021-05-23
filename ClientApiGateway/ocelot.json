@@ -1,0 +1,164 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/TeamObjs",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44385
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/teams",
+      "UpstreamHttpMethod": [ "GET" ],
+      "key": "teams"
+    },
+    {
+      "DownstreamPathTemplate": "/api/TeamObjs/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44385
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/teams/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+
+
+    {
+      "DownstreamPathTemplate": "/api/PlayerObjs",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44385
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/players",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/PlayerObjs/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44385
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/players/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/PlayerObjs/teamPlayers/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44385
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/team-players/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+
+
+    {
+      "DownstreamPathTemplate": "/api/ReviewObjs",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44319
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/review",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+
+
+
+    {
+      "DownstreamPathTemplate": "/api/NewsObjs",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44357
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/news",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/NewsObjs/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44357
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/news/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+
+
+
+    {
+      "DownstreamPathTemplate": "/api/GamesObjs",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44380
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/games",
+      "UpstreamHttpMethod": [ "GET" ],
+      "key": "games"
+    },
+    {
+      "DownstreamPathTemplate": "/api/GamesObjs/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44380
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/games/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/GamesObj/teamGames/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44380
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/team-games/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/GameEventsObjs/gameEvents/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44380
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/game-events/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+  ]
+}

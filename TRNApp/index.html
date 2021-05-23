@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ViCUP</title>
+    <link rel="stylesheet" href="Assets/fontawesome-5.5/css/all.min.css" />
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Assets/css/templatemo-style.css" />
+
+  </head>
+  <body>
+      <!-- Hero section -->
+      <section id="hero" class="text-white tm-font-big tm-parallax">
+          <!-- Navigation -->
+          <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
+              <div class="container">
+                  <div class="tm-next">
+                      <a href="#hero" class="navbar-brand">ViCUP</a>
+                  </div>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto">
+                          <li class="nav-item">
+                              <a class="nav-link tm-nav-link" href="#information">Informācija</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link tm-nav-link" href="#teams">Komandas</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link tm-nav-link" href="#standings">Rezultāti</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link tm-nav-link" href="#games">Spēles</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link tm-nav-link" href="#contact">Kontakti</a>
+                          </li>
+                      </ul>
+                  </div>
+
+              </div>
+          </nav>
+
+          <!-- Start main info -->
+          <div class="text-center tm-hero-text-container">
+              <div class="tm-hero-text-container-inner">
+                  <h2 class="tm-hero-title" style="text-shadow: #FC0 1px 0 15px;">Vi Floorball Cup</h2>
+                  <p class="tm-hero-subtitle" style="text-shadow: #FC0 1px 0 15px;">
+                      Arēna Rīga 01.01 - 07.01.
+                  </p>
+              </div>
+          </div>
+
+          <!-- Information button -->
+          <div class="tm-next tm-intro-next">
+              <a href="#information" class="text-center tm-down-arrow-link">
+                  <i class="fas fa-3x fa-angle-double-down tm-down-arrow"></i>
+              </a>
+          </div>
+
+      </section>
+
+      <!-- Introduction -->
+      <section id="information" class="tm-section-pad-top tm-section-pad-bot">
+          <div class="container">
+              <div class="row">
+                  <div class="text-center col-12">
+                      <h2 class="tm-text-primary tm-section-title mb-4">Informācija & Jaunākās ziņas</h2>
+
+                      <div class="container">
+                          <div class="row justify-content-center">
+                              <div class="col-4">
+                                  The International Floorball Tournament “ViCUP” is the largest open floorball tournament in Riga.
+                                  The International Floorball Tournament “ViCUP” is the largest open floorball tournament in Riga.
+                                  The International Floorball Tournament “ViCUP” is the largest open floorball tournament in Riga.
+                                  The International Floorball Tournament “ViCUP” is the largest open floorball tournament in Riga.
+                              </div>
+                              <div class="col-6">
+                                  <table class="table table-hover">
+                                      <tbody id="news-table">
+                                      </tbody>
+                                  </table>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="container">
+                          <div id="selected-news" class="row justify-content-center">
+                              <p id="selected-news-p"> </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Teams -->
+      <section id="teams" class="tm-section-pad-top tm-section-pad-bot">
+          <div class="container">
+              <div class="row">
+                  <div class="text-center col-12">
+                      <h2 class="tm-text-primary tm-section-title mb-4">Komandas</h2>
+
+                      <div class="container">
+                          <div class="row">
+                              <div class="col">
+                                  <h4 style="text-align: center">Grupa A</h4>
+                                  <table class="tb-groups table table-hover">
+                                      <thead class="thead-dark">
+                                          <tr>
+                                              <th>Nr.</th>
+                                              <th>Abr.</th>
+                                              <th>Team Name</th>
+                                              <th>GP</th>
+                                              <th>GS</th>
+                                              <th>GA</th>
+                                              <th>Points</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody id="group-a">
+                                      </tbody>
+                                  </table>
+                              </div>
+                              <div class="col">
+                                  <h4 style="text-align: center">Grupa B</h4>
+                                  <table class="tb-groups table ">
+                                      <thead class="thead-dark">
+                                          <tr>
+                                              <th>Nr.</th>
+                                              <th>Abr.</th>
+                                              <th>Team Name</th>
+                                              <th>GP</th>
+                                              <th>GS</th>
+                                              <th>GA</th>
+                                              <th>Points</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody id="group-b">
+                                      </tbody>
+                                  </table>
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Players -->
+      <section id="players" class="tm-section-pad-top tm-section-pad-bot">
+          <div class="container">
+              <div class="row">
+                  <div class="text-center col-12">
+                      <h2 id="players-team-name" class="tm-text-primary tm-section-title mb-4">Spēlētāji</h2>
+                      <div class="row">
+
+                          <table class="table table-hover">
+                              <thead class="thead-dark">
+                                  <tr>
+                                      <th scope="col">#</th>
+                                      <th scope="col">Vārds</th>
+                                      <th scope="col">Uzvārds</th>
+                                      <th scope="col">Pozīcija</th>
+                                      <th scope="col">Vārti</th>
+                                      <th scope="col">Piespēles</th>
+                                      <th scope="col">Soda minūtes</th>
+                                  </tr>
+                              </thead>
+                              <tbody id="player-table">
+                              </tbody>
+                          </table>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Results -->
+      <section id="standings" class="tm-section-pad-top tm-section-pad-bot">
+          <div class="container">
+              <div class="row">
+                  <div class="text-center col-12">
+                      <h2 class="tm-text-primary tm-section-title mb-4">Jaunākie rezultāti</h2>
+
+                      <div class="container" id="recent-results-tab">
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Games -->
+      <section id="games" class="tm-section-pad-top tm-section-pad-bot">
+          <div class="container">
+              <div class="row">
+                  <div class="text-center col-12">
+                      <h2 class="tm-text-primary tm-section-title mb-4">Gaidāmās spēles</h2>
+
+                      <div class="container" id="future-games-tab">
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Sign-Up -->
+      <section class="newsletter">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-12">
+                      <div class="content">
+                          <h2>Pierakstīties jaunumiem</h2>
+                          <div class="input-group">
+                              <input id="sub-id" type="email" class="form-control" placeholder="Ievadiet epastu...">
+                              <span class="input-group-btn">
+                                  <button onclick="submitSignUp()" class="btn" type="submit">Pierakstīties</button>
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Contact and footer section -->
+      <section id="contact">
+          <!-- Contact us -->
+          <div class="container tm-container-contact">
+              <div class="row">
+                  <div class="col-4">
+                      <h2 class="mb-4 tm-section-title">Kontakti</h2>
+                      <p>
+                          Phone - 20000000<br />
+                          E-Mail - vicup@gmail.com<br />
+                          Address - Rīgas iela 6, Latvija<br />
+                      </p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Footer -->
+          <footer class="text-center small tm-footer">
+              <p class="mb-0">
+                  Made by:
+                  <a rel="nofollow" href="https://www.google.com/" class="tm-footer-link">Daniēls Ģederts</a>
+              </p>
+          </footer>
+      </section>
+
+      <script src="Assets/js/jquery-1.9.1.min.js"></script>
+      <script src="Assets/js/jquery.singlePageNav.min.js"></script>
+      <script src="Assets/js/bootstrap.min.js"></script>
+      <script src="Assets/js/indexjs.js"></script>
+
+  </body>
+</html>
