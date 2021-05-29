@@ -210,17 +210,25 @@
       </section>
 
       <!-- Sign-Up -->
-      <section class="newsletter">
+      <section class="newsletter" style="background-color:white; color:black;">
           <div class="container">
               <div class="row">
                   <div class="col-sm-12">
                       <div class="content">
                           <h2>Pierakstīties jaunumiem</h2>
                           <div class="input-group">
-                              <input id="sub-id" type="email" class="form-control" placeholder="Ievadiet epastu...">
-                              <span class="input-group-btn">
-                                  <button onclick="submitSignUp()" class="btn" type="submit">Pierakstīties</button>
-                              </span>
+
+                              <form action="#" autocomplete="off">
+                                  <fieldset>
+                                      <input id="email-text" type="text" name="email-text" required>
+                                      <label for="email-text">EMail</label>
+                                      <div class="after"></div>
+                                  </fieldset>
+                                  <fieldset>
+                                      <button id="ApproveAll">Submit</button>
+                                  </fieldset>
+                              </form>
+
                           </div>
                       </div>
                   </div>
@@ -229,7 +237,7 @@
       </section>
 
       <!-- Contact and footer section -->
-      <section id="contact">
+      <section id="contact" style="background-color:white; color:black;" >
           <!-- Contact us -->
           <div class="container tm-container-contact">
               <div class="row">
@@ -241,17 +249,26 @@
                           Address - Rīgas iela 6, Latvija<br />
                       </p>
                   </div>
+
+                  <form action="#" autocomplete="off">
+                      <fieldset>
+                          <input id="username" type="text" name="username" required>
+                          <label for="username">Username</label>
+                          <div class="after"></div>
+                      </fieldset>
+                      <fieldset>
+                          <input id="password" type="text" name="password" required>
+                          <label for="password">Body</label>
+                          <div class="after"></div>
+                      </fieldset>
+                      <fieldset>
+                          <button id="SubmitLogin">Submit</button>
+                      </fieldset>
+                  </form>
+
               </div>
           </div>
 
-          <!-- Footer -->
-          <footer class="text-center small tm-footer">
-              <p class="mb-0">
-                  Made by:
-                  <a rel="nofollow" href="https://www.google.com/" class="tm-footer-link">Daniēls Ģederts</a>
-              </p>
-          </footer>
-      </section>
 
       <script src="Assets/js/jquery-1.9.1.min.js"></script>
       <script src="Assets/js/jquery.singlePageNav.min.js"></script>

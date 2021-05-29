@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="Assets/fontawesome-5.5/css/all.min.css" />
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Assets/css/admin-style.css" />
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
+        <div class="container">
+            <div class="tm-next">
+                <a href="#hero" class="navbar-brand">ViCUP</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link tm-nav-link" href="#add-news">Jaunumi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tm-nav-link" href="#add-team">Komandas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tm-nav-link" href="#add-player">Spēlētāji</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tm-nav-link" href="#add-game">Spēles</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- News -->
+    <section id="add-news" class="tm-section-pad-top tm-section-pad-bot">
+        <div class="container">
+            <div class="row">
+                <div class="text-center col-12">
+                    <h2 class="tm-text-primary tm-section-title mb-4">Add news</h2>
+
+                    <form action="#" autocomplete="off">
+                        <fieldset>
+                            <input id="add-news-title" type="text" name="add-news-title" required>
+                            <label for="add-news-title">Title</label>
+                            <div class="after"></div>
+                        </fieldset>
+                        <fieldset>
+                            <input id="add-news-text" type="text" name="add-news-text" required>
+                            <label for="add-news-text">Body</label>
+                            <div class="after"></div>
+                        </fieldset>
+                        <fieldset>
+                            <button id="SubmitNews">Submit</button>
+                        </fieldset>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section id="add-team" class="tm-section-pad-top tm-section-pad-bot">
+        <div class="container">
+            <div class="row">
+                <div class="text-center col-12">
+                    <h2 class="tm-text-primary tm-section-title mb-4">Teams</h2>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="tm-text-primary tm-section-title mb-4">Add Team</h2>
+
+                                <form action="#" autocomplete="off">
+                                    <fieldset>
+                                        <input id="add-team-name" type="text" name="add-team-name" required>
+                                        <label for="add-team-name">Team Name</label>
+                                        <div class="after"></div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input id="add-team-abr" type="text" name="add-team-abr" required>
+                                        <label for="add-team-abr">Abreviation</label>
+                                        <div class="after"></div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input id="add-team-group" type="text" name="add-team-group" required>
+                                        <label for="add-team-group">Group</label>
+                                        <div class="after"></div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <button id="SubmitTeam">Submit</button>
+                                    </fieldset>
+                                </form>
+
+                            </div>
+                            <div class="col">
+                                <h2 class="tm-text-primary tm-section-title mb-4">Delete Team</h2>
+
+                                <form action="#" autocomplete="off">
+                                    <fieldset>
+                                        <input id="delete-team" type="text" name="delete-team" required>
+                                        <label for="delete-team">Team</label>
+                                        <div class="after"></div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <button id="DeleteTeam">Submit</button>
+                                    </fieldset>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Player -->
+    <section id="add-player" class="tm-section-pad-top tm-section-pad-bot">
+        <div class="container">
+            <div class="row">
+                <div class="text-center col-12">
+                    <h2 class="tm-text-primary tm-section-title mb-4">Players</h2>
+
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="tm-text-primary tm-section-title mb-4">Add Player</h2>
+
+                                <form action="#" autocomplete="off">
+                                    <fieldset>
+                                        <input id="add-player-name" type="text" name="add-player-name" required>
+                                        <label for="add-player-name">Player Name</label>
+                                        <div class="after"></div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input id="add-player-surname" type="text" name="add-player-surname" required>
+                                        <label for="add-player-surname">Last Name</label>
+                                        <div class="after"></div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input id="add-player-nr" type="number" name="add-player-nr" required>
+                                        <label for="add-player-nr">Nr</label>
+                                        <div class="after"></div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input id="add-player-bd" type="text" name="add-player-bd" required>
+                                        <label for="add-player-bd">Birthday</label>
+                                        <div class="after"></div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input id="add-player-pos" type="text" name="add-player-pos" required>
+                                        <label for="add-player-pos">Position</label>
+                                        <div class="after"></div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input id="add-player-club" type="number" name="add-player-club" required>
+                                        <label for="add-player-pos">Club</label>
+                                        <div class="after"></div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <button id="SubmitPlayer">Submit</button>
+                                    </fieldset>
+                                </form>
+
+                            </div>
+                            <div class="col">
+                                <h2 class="tm-text-primary tm-section-title mb-4">Delete Player</h2>
+
+                                <form action="#" autocomplete="off">
+                                    <fieldset>
+                                        <input id="delete-player" type="text" name="delete-player" required>
+                                        <label for="delete-player">Team</label>
+                                        <div class="after"></div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <button id="DeletePlayer">Submit</button>
+                                    </fieldset>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game -->
+    <section id="add-game" class="tm-section-pad-top tm-section-pad-bot">
+        <div class="container">
+            <div class="row">
+                <div class="text-center col-12">
+                    <h2 class="tm-text-primary tm-section-title mb-4">Games</h2>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="tm-text-primary tm-section-title mb-4">Add Game</h2>
+
+                                <form action="#" autocomplete="off">
+                                    <fieldset>
+                                        <input id="add-game-id1" type="number" name="add-game-id1" required>
+                                        <label for="add-game-id1">First Team</label>
+                                        <div class="after"></div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input id="add-game-id1" type="number" name="add-game-id1" required>
+                                        <label for="add-game-id1">Second Team</label>
+                                        <div class="after"></div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input id="add-game-goals1" type="number" name="add-game-goals1" required>
+                                        <label for="add-game-goals1">FirstTeamGoals</label>
+                                        <div class="after"></div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input id="add-game-goals2" type="number" name="add-game-goals2" required>
+                                        <label for="add-game-goals2">SecondTeamGoals</label>
+                                        <div class="after"></div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input id="add-overtime" type="number" name="add-overtime" required>
+                                        <label for="add-overtime">Overtime</label>
+                                        <div class="after"></div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input id="add-starting-time" type="text" name="add-starting-time" required>
+                                        <label for="add-starting-time">Start</label>
+                                        <div class="after"></div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input id="add-game-type" type="text" name="add-game-type" required>
+                                        <label for="add-game-type">Game Type</label>
+                                        <div class="after"></div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input id="add-finished" type="number" name="add-finished" required>
+                                        <label for="add-finished">Finished</label>
+                                        <div class="after"></div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <button id="SubmitGame">Submit</button>
+                                    </fieldset>
+                                </form>
+
+                            </div>
+                            <div class="col">
+                                <h2 class="tm-text-primary tm-section-title mb-4">Delete Game</h2>
+
+                                <form action="#" autocomplete="off">
+                                    <fieldset>
+                                        <input id="delete-game" type="text" name="delete-game" required>
+                                        <label for="delete-game">Game</label>
+                                        <div class="after"></div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <button id="DeleteGame">Submit</button>
+                                    </fieldset>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="Assets/js/jquery-1.9.1.min.js"></script>
+    <script src="Assets/js/jquery.singlePageNav.min.js"></script>
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="Assets/js/adminjs.js"></script>
+
+</body>
+</html>

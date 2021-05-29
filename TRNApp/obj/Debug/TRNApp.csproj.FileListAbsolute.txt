@@ -64,3 +64,4 @@ C:\Users\User\Desktop\Microservices\TRNApp\obj\Debug\TRNApp.csproj.CoreCompileIn
 C:\Users\User\Desktop\Microservices\TRNApp\obj\Debug\TRNApp.csproj.CopyComplete
 C:\Users\User\Desktop\Microservices\TRNApp\obj\Debug\TRNApp.dll
 C:\Users\User\Desktop\Microservices\TRNApp\obj\Debug\TRNApp.pdb
+C:\Users\User\Desktop\Microservices\TRNApp\obj\Debug\TRNApp.csprojAssemblyReference.cache

@@ -194,3 +194,43 @@ $(document).ready(function () {
     });
 
 });
+
+$(document).ready(function () {
+    $('#ApproveAll').on('click',
+        function (e) {
+
+            alert("You have been subscribed to the Newsletter with the email - " + $("#email-text").val());
+
+            var jsonObject = {
+                "subId": 0,
+                "subscriptionEmail": $("#email-text").val()
+            };
+
+            $.ajax({
+                url: 'http://localhost:8081/api/SubscriptionObjs',
+                type: "POST",
+                contentType: "application/json;charset=utf-8",
+                data: JSON.stringify(jsonObject),
+                traditional: true,
+                statusCode: {
+                    415: function () {
+                        Response.redirect("/Admin/Index");
+                    }
+                },
+                success: function (result) {
+                    console.log(result);
+                }
+            });
+            e.preventDefault();
+        });
+
+
+    $('#SubmitLogin').on('click',
+        function (e) {
+            if ($("#username").val() == "admin" && $("#password").val() == "123")
+            {
+                window.open('https://localhost:44386/admin-form.html', '_blank');
+            }
+
+        });
+});

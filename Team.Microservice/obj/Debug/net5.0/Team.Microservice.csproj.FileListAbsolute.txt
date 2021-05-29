@@ -311,3 +311,4 @@ C:\Users\User\Desktop\Microservices\Team.Microservice\obj\Debug\net5.0\Team.Micr
 C:\Users\User\Desktop\Microservices\Team.Microservice\obj\Debug\net5.0\ref\Team.Microservice.dll
 C:\Users\User\Desktop\Microservices\Team.Microservice\obj\Debug\net5.0\Team.Microservice.pdb
 C:\Users\User\Desktop\Microservices\Team.Microservice\obj\Debug\net5.0\Team.Microservice.genruntimeconfig.cache
+C:\Users\User\Desktop\Microservices\Team.Microservice\obj\Debug\net5.0\Team.Microservice.csprojAssemblyReference.cache

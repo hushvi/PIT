@@ -83,6 +83,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin-form.html" />
+    <Content Include="Assets\css\admin-style.css" />
     <Content Include="Assets\css\bootstrap.min.css" />
     <Content Include="Assets\css\templatemo-style.css" />
     <Content Include="Assets\fontawesome-5.5\css\all.min.css" />
@@ -106,6 +108,7 @@
     <Content Include="Assets\img\the-town-01.jpg" />
     <Content Include="Assets\img\the-town-bg-01.jpg" />
     <Content Include="Assets\img\the-town-bg-02.jpg" />
+    <Content Include="Assets\js\adminjs.js" />
     <Content Include="Assets\js\bootstrap.min.js" />
     <Content Include="Assets\js\indexjs.js" />
     <Content Include="Assets\js\jquery-1.9.1.min.js" />
