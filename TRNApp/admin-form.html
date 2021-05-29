@@ -21,16 +21,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link tm-nav-link" href="#add-news">Jaunumi</a>
+                        <a class="nav-link tm-nav-link" href="#add-news">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link tm-nav-link" href="#add-team">Komandas</a>
+                        <a class="nav-link tm-nav-link" href="#add-team">Teams</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link tm-nav-link" href="#add-player">Spēlētāji</a>
+                        <a class="nav-link tm-nav-link" href="#add-player">Players</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link tm-nav-link" href="#add-game">Spēles</a>
+                        <a class="nav-link tm-nav-link" href="#add-game">Games</a>
                     </li>
                 </ul>
             </div>
@@ -76,12 +76,12 @@
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <h2 class="tm-text-primary tm-section-title mb-4">Add Team</h2>
+                                <h2 class="tm-text-primary tm-section-title mb-4">AddTeam</h2>
 
                                 <form action="#" autocomplete="off">
                                     <fieldset>
                                         <input id="add-team-name" type="text" name="add-team-name" required>
-                                        <label for="add-team-name">Team Name</label>
+                                        <label for="add-team-name">TeamName</label>
                                         <div class="after"></div>
                                     </fieldset>
                                     <fieldset>
@@ -92,6 +92,26 @@
                                     <fieldset>
                                         <input id="add-team-group" type="text" name="add-team-group" required>
                                         <label for="add-team-group">Group</label>
+                                        <div class="after"></div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input id="add-gp" type="number" name="add-gp" required>
+                                        <label for="add-gp">GamesPlayed</label>
+                                        <div class="after"></div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input id="add-gs" type="number" name="add-gs" required>
+                                        <label for="add-gs">GoalsScored</label>
+                                        <div class="after"></div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input id="add-ga" type="number" name="add-ga" required>
+                                        <label for="add-ga">GoalsAgainst</label>
+                                        <div class="after"></div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input id="add-p" type="number" name="add-p" required>
+                                        <label for="add-p">Points</label>
                                         <div class="after"></div>
                                     </fieldset>
                                     <fieldset>
@@ -139,12 +159,12 @@
                                 <form action="#" autocomplete="off">
                                     <fieldset>
                                         <input id="add-player-name" type="text" name="add-player-name" required>
-                                        <label for="add-player-name">Player Name</label>
+                                        <label for="add-player-name">PlayerName</label>
                                         <div class="after"></div>
                                     </fieldset>
                                     <fieldset>
                                         <input id="add-player-surname" type="text" name="add-player-surname" required>
-                                        <label for="add-player-surname">Last Name</label>
+                                        <label for="add-player-surname">LastName</label>
                                         <div class="after"></div>
                                     </fieldset>
                                     <fieldset>
@@ -210,13 +230,13 @@
 
                                 <form action="#" autocomplete="off">
                                     <fieldset>
-                                        <input id="add-game-id1" type="number" name="add-game-id1" required>
-                                        <label for="add-game-id1">First Team</label>
+                                        <input id="add-game-id1" type="text" name="add-game-id1" required>
+                                        <label for="add-game-id1">FirstTeam</label>
                                         <div class="after"></div>
                                     </fieldset>
                                     <fieldset>
-                                        <input id="add-game-id1" type="number" name="add-game-id1" required>
-                                        <label for="add-game-id1">Second Team</label>
+                                        <input id="add-game-id2" type="text" name="add-game-id2" required>
+                                        <label for="add-game-id2">SecondTeam</label>
                                         <div class="after"></div>
                                     </fieldset>
                                     <fieldset>
@@ -283,6 +303,7 @@
     <script src="Assets/js/jquery.singlePageNav.min.js"></script>
     <script src="Assets/js/bootstrap.min.js"></script>
     <script src="Assets/js/adminjs.js"></script>
+    <script src="Assets/js/indexjs.js"></script>
 
 </body>
 </html>

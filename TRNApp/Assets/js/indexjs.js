@@ -8,6 +8,13 @@ function getByValue(map, searchValue) {
     }
 }
 
+function getByKey(map, searchValue) {
+    for (let [key, value] of map.entries()) {
+        if (key === searchValue)
+            return value;
+    }
+}
+
 $(function () {
     // Detect window scroll and update navbar
     $(window).scroll(function (e) {
@@ -76,7 +83,6 @@ $(document).ready(function () {
     // Fill latest news
     $.ajax({
         type: "GET",
-        //url: 'https://localhost:44325/gateway/news',
         url: 'http://localhost:8084/api/NewsObjs',
         contentType: "application/json",
         dataType: "json",
@@ -136,7 +142,7 @@ $(document).ready(function () {
     $.ajax({
         type: "GET",
         //url: 'https://localhost:44325/gateway/games',
-        url: 'http://localhost:8083/api/GamesObjs',
+       url: 'http://localhost:8083/api/GamesObjs',
         contentType: "application/json",
         dataType: "json",
         success: function (data) {
@@ -170,7 +176,7 @@ $(document).ready(function () {
             $.ajax({
                 type: "GET",
                 url: 'http://localhost:8082/api/PlayerObjs/teamPlayers/' + teamId,
-                //url: 'http://localhost:44385/api/PlayerObjs/teamPlayers/' + teamId,
+                //url: 'http://localhost:44325/gateway/team-games/' + teamId,
                 contentType: "application/json",
                 dataType: "json",
                 success: function (data) {

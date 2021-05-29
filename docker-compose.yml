@@ -2,7 +2,7 @@ version: "3.9"
 services:
 
   sql-data:
-    image: hushvi/sqldata
+    image: sqldata
     environment:
      ACCEPT_EULA: "Y"
      SA_PASSWORD: "Pa$$w0rd16"
@@ -12,28 +12,28 @@ services:
      - "1433:1433" 
 
   subscription:
-    build: C:\Users\User\Desktop\Microservices\Subscriptions.Microservice\.
+    image: hushvi/service-subs
     environment: 
      DBServer: "sql-data"
     ports:
       - 8081:80
 
   team:
-    build: C:\Users\User\Desktop\Microservices\Team.Microservice\.
+    image: hushvi/service-teams
     environment: 
      DBServer: "sql-data"
     ports:
       - 8082:80
 
   games:
-    build: C:\Users\User\Desktop\Microservices\Games.Microservice\.
+    image: hushvi/service-games
     environment: 
      DBServer: "sql-data"
     ports:
       - 8083:80
 
   news:
-    build: C:\Users\User\Desktop\Microservices\News.Microservice\.
+    image: hushvi/service-news
     environment: 
      DBServer: "sql-data"
     ports:

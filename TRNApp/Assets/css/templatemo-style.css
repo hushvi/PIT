@@ -27,6 +27,10 @@ a:focus {
     padding-top: 135px;
 }
 
+.tm-section-pad-bot {
+    padding-bottom: 135px;
+}
+
 .tm-text-primary {
   color: #3496d8;
 }
